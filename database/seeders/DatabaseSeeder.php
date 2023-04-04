@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Listing;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -12,11 +13,22 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        \App\Models\User::factory(10)->create();
+        Listing::factory(6)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        // Listing::create([
+        //     'title' => 'laravel senior dev',
+        //     'tags' => 'laravel ',
+        //     'company' => 'laravdev',
+        //     'location' => 'indaf',
+        //     'email' => 'lorem laravel senior dev',
+        //     'website' => 'lorem laravel senior dev',
+        //     'description' => 'lorem laravel senior dev',
+        // ]);
+
     }
 }
