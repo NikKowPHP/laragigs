@@ -7,7 +7,8 @@
             </a>
 
 <div class="mx-4">
-    <div class="bg-gray-50 border border-gray-200 p-10 rounded">
+    <x-card class="p-10">
+
         <div
             class="flex flex-col items-center justify-center text-center"
         >
@@ -71,7 +72,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </x-card>
 </div>
 
 @endsection
