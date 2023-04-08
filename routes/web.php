@@ -15,6 +15,19 @@ use App\Models\Listing;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+// Common Resource routes:
+// index
+// show
+// create
+// store
+// edit
+// update
+// destroy
+
+
+
+
 // All listings
 
 Route::get('/', [ListingController::class, 'index']);
