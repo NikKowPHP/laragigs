@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\ListingController;
+use App\Models\Listing;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Models\Listing;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ListingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,3 +53,6 @@ Route::get('/listings/{listing}', [ListingController::class, 'show']);
 
 // Show register/create form 
 Route::get('/register', [UserController::class, 'create']);
+
+// create  new user
+Route::post('/users', [UserController::class, 'store']);
